@@ -4,6 +4,7 @@
 
 FROM golang:1.14.6 AS build-env
 ARG SOURCE=*
+ENV GODEBUG=asyncpreemptoff=1
 
 ADD $SOURCE /src/
 WORKDIR /src/
