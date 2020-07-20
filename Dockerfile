@@ -2,7 +2,7 @@
 # Builder image
 #
 
-FROM golang:1.14.4 AS build-env
+FROM golang:1.14.6 AS build-env
 ARG SOURCE=*
 
 ADD $SOURCE /src/
